@@ -1,0 +1,35 @@
+ödevasansör
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("BINANIZ 10 KATLIDIR LUTFEN GITMEK ISTEDINIGIZ KATI VE SUANKI BULUNDUGUNUZ KATI YAZIN");
+        
+        
+        System.out.println("ONCE BULUNDUGUNUZ KATI GIRIN");
+        int bulkat=sc.nextInt();
+        if(bulkat>10 || bulkat<1){
+            System.out.println("LUTFEN GECERLI BIR KAT SAYISI GIRIN");
+        }else{ 
+        System.out.println("SIMDI DE GITMEK ISTEDIGINIZ KATI GIRIN");
+            
+        int gitkat=sc.nextInt();
+        if(gitkat>10 || gitkat<1){
+            System.out.println("LUTFEN GECERLI BIR SAYI GIRIN");
+                }else{
+        if(bulkat==gitkat){
+            System.out.println("GITMEK ISTEDGINIZ YER VE BULUNDUGUNUZ YER AYNI");
+         }else if (bulkat>gitkat){
+            int mesafe=bulkat-gitkat;
+            System.out.println("GITMEK ISTEDIGINIZ KAT BULUNDUGUNUZ KATTAN "+mesafe+" KAT ASAGIDADIR ASANSOR ASAGI HAREKET EDECEK");
+     //asansör aşağı inicek
+            
+         }else{
+            int mesafe=gitkat-bulkat;
+            System.out.println("GITMEK ISTEDGINIZ KAT BULUNDUGUNUZ KATTAN "+mesafe+" KAT YUKARIDADIR ASANSOR YUKARI HAREKET EDECEK");
+         }
+            }    
+      }
+ }
+}
+        
