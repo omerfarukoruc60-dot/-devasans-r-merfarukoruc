@@ -1,9 +1,8 @@
-ödevasansör
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("BINANIZ 10 KATLIDIR LUTFEN GITMEK ISTEDINIGIZ KATI VE SUANKI BULUNDUGUNUZ KATI YAZIN");
+        System.out.println("BINANIZ 10 KATLIDIR LUTFEN GITMEK ISTEDIGINIZ KATI VE SUANKI BULUNDUGUNUZ KATI YAZIN");
         
         
         System.out.println("ONCE BULUNDUGUNUZ KATI GIRIN");
@@ -18,7 +17,7 @@ class Main {
             System.out.println("LUTFEN GECERLI BIR SAYI GIRIN");
                 }else{
         if(bulkat==gitkat){
-            System.out.println("GITMEK ISTEDGINIZ YER VE BULUNDUGUNUZ YER AYNI");
+            System.out.println("GITMEK ISTEDIGINIZ YER VE BULUNDUGUNUZ YER AYNI");
          }else if (bulkat>gitkat){
             int mesafe=bulkat-gitkat;
             System.out.println("GITMEK ISTEDIGINIZ KAT BULUNDUGUNUZ KATTAN "+mesafe+" KAT ASAGIDADIR ASANSOR ASAGI HAREKET EDECEK");
@@ -26,10 +25,9 @@ class Main {
             
          }else{
             int mesafe=gitkat-bulkat;
-            System.out.println("GITMEK ISTEDGINIZ KAT BULUNDUGUNUZ KATTAN "+mesafe+" KAT YUKARIDADIR ASANSOR YUKARI HAREKET EDECEK");
+            System.out.println("GITMEK ISTEDIGINIZ KAT BULUNDUGUNUZ KATTAN "+mesafe+" KAT YUKARIDADIR ASANSOR YUKARI HAREKET EDECEK");
          }
             }    
       }
  }
 }
-        
